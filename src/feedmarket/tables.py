@@ -17,3 +17,9 @@ class Country(Base):
     id = sa.Column(sa.Integer, primary_key=True)
     name = sa.Column(sa.String)
     user_id = sa.Column(sa.Integer, sa.ForeignKey('users.id'))
+
+class Industry(Base):
+    __tablename__ = 'industry'
+
+    id = sa.Column(sa.Integer, primary_key=True)
+    name = sa.Column(sa.String)
